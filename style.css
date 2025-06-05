@@ -1,0 +1,23 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container{
+    --grid-size: 16;   
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    max-height: 960px; 
+}
+.square{
+    width: calc(100%/var(--grid-size));
+    padding-bottom: calc(100%/var(--grid-size));
+    background-color: rgb(255, 255, 255);  
+    border: 1px solid black;
+    box-sizing: border-box;
+}
