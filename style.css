@@ -11,12 +11,12 @@ html,body{
     --grid-size: 16;   
     display: flex;
     flex-wrap: wrap;
-    max-width: 960px;
-    max-height: 960px; 
+    width: 500px;
+    height: 500px; 
 }
 .square{
-    width: calc(100%/var(--grid-size));
-    padding-bottom: calc(100%/var(--grid-size));
+    aspect-ratio: 1;
+    width: calc((100%/var(--grid-size)));  
     background-color: rgb(255, 255, 255);  
     border: 1px solid black;
     box-sizing: border-box;
